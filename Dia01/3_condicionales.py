@@ -46,34 +46,53 @@ sexo = 'Masculino'
 estatura = 1.35
 # output > si hay ropa
 if sexo == 'Masculino':
-    if estatura < 1.50 or estatura < 1.30:
-        if estatura >= 130 and estatura <= 1.49:
-            print('Si hay ropa')
-        else:
-            print('No hay prendas')
+    if estatura > 1.30 and estatura < 1.49:
+        print('si hay ropa')
+    else:
+        print('No hay ropa')
+else:
+    if estatura > 1.10 and estatura < 1.49:
+        print('si hay ropa')
+    else:
+        print('No hay ropa')
 
 sexo = 'Masculino'
 estatura = 1.80
 # output > no hay ropa
 if sexo == 'Masculino':
-    if estatura < 1.50 or estatura < 1.30:
-        if estatura >= 130 and estatura <= 1.49:
-            print('Si hay ropa')
-        else:
-            print('No hay prendas')
+    if estatura > 1.30 and estatura < 1.49:
+        print('si hay ropa')
     else:
-            print('No hay prendas')
+        print('No hay ropa')
+else:
+    if estatura > 1.10 and estatura < 1.49:
+        print('si hay ropa')
+    else:
+        print('No hay ropa')
 sexo = 'Femenino'
 estatura = 1.20
 #output > si hay ropa
-if sexo == 'Femenino':
-    if estatura < 1.50 or estatura < 1.30:
-        if estatura >= 130 and estatura <= 1.49:
-            print('Si hay ropa')
-        else:
-            print('No hay prendas')
+if sexo == 'Masculino':
+    if estatura > 1.30 and estatura < 1.49:
+        print('si hay ropa')
     else:
-            print('No hay prendas')
+        print('No hay ropa')
+else:
+    if estatura > 1.10 and estatura < 1.49:
+        print('si hay ropa')
+    else:
+        print('No hay ropa')
+
 sexo = 'Femenino'
 estatura = 1.08
 # output > no hay ropa
+if sexo == 'Masculino':
+    if estatura > 1.30 and estatura < 1.49:
+        print('si hay ropa')
+    else:
+        print('No hay ropa')
+else:
+    if estatura > 1.10 and estatura < 1.49:
+        print('si hay ropa')
+    else:
+        print('No hay ropa')
