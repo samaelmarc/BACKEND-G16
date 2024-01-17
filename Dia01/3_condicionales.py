@@ -50,11 +50,11 @@ if sexo == 'Masculino':
         print('si hay ropa')
     else:
         print('No hay ropa')
-else:
+elif sexo == 'Femenino':
     if estatura > 1.10 and estatura < 1.49:
-        print('si hay ropa')
+            print('si hay ropa')
     else:
-        print('No hay ropa')
+            print('No hay ropa')
 
 sexo = 'Masculino'
 estatura = 1.80
@@ -64,11 +64,12 @@ if sexo == 'Masculino':
         print('si hay ropa')
     else:
         print('No hay ropa')
-else:
+elif sexo == 'Femenino':
     if estatura > 1.10 and estatura < 1.49:
-        print('si hay ropa')
+            print('si hay ropa')
     else:
-        print('No hay ropa')
+            print('No hay ropa')
+        
 sexo = 'Femenino'
 estatura = 1.20
 #output > si hay ropa
@@ -77,11 +78,11 @@ if sexo == 'Masculino':
         print('si hay ropa')
     else:
         print('No hay ropa')
-else:
+elif sexo == 'Femenino':
     if estatura > 1.10 and estatura < 1.49:
-        print('si hay ropa')
+            print('si hay ropa')
     else:
-        print('No hay ropa')
+            print('No hay ropa')
 
 sexo = 'Femenino'
 estatura = 1.08
@@ -91,8 +92,25 @@ if sexo == 'Masculino':
         print('si hay ropa')
     else:
         print('No hay ropa')
-else:
+elif sexo == 'Femenino':
     if estatura > 1.10 and estatura < 1.49:
-        print('si hay ropa')
+            print('si hay ropa')
     else:
-        print('No hay ropa')
+            #pasa > pass , todavia no hay logica (no hace nada pero nos permite dejar la condiciona vacia)
+            pass
+            #print('No hay ropa')
+            
+#operador TERNARIO
+#condicion que sirve para ejecutarse en una sola linea y en base a la condicion RETORNARA un valor u otro
+
+# si el usuario es PERUANO  pagara 5 soles si es  EXTRANJERO pagara 8 soles
+nacionalidad = 'ECUATORIARNO'
+
+if nacionalidad== 'PERUANO':
+    print('pagie 5 soles')
+else:
+    print('pagie 8 soles')
+    
+resultado = 'pague 5 soles' if nacionalidad == 'PERUANO' else 'pagie 8 soles'
+
+print(resultado)
