@@ -77,5 +77,4 @@ data['edad'] = 30
 # no se puede usar el metodo .get para cuestiones de asignacion, netamente para lectura
 # data.get('nacionalidad') = 'Peruano'
 
-
 print('hola')
