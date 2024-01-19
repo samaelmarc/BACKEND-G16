@@ -8,6 +8,7 @@ app = Flask(__name__) # encargado de crear mi servidor del backend
 # si el archivo es el archivo principal el valor de __name__ sera __main__
 
 #uso de decoradores
+#para usar un enpoint, modificamos el comportamiento
 #sirve para utilizar un metodo sin la necesidad de modificarlo desde la clase en la cual estamos haciendo la referencia
 #GET > devolver
 #POST > creaciones
