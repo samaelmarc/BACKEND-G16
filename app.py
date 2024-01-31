@@ -1,5 +1,8 @@
 from flask import Flask
 from variables import conexion
+from models.usuario import UsuarioModel
+from models.direccion import DireccionModel
+
 app = Flask(__name__)
 #print(app.config)
 
@@ -13,6 +16,21 @@ app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:root@localhost:3306/alumnos'
 
 conexion.init_app(app)
 
+
+#before_request > se mandara a llamar a esta funcionalidad antes que cualquier request(peticion)
+#create.all debe estar dentro de un request
+#create_all > crea todas las tablas que no se han creado en la base de datos 
+@app.before_request
+def inicializacion():
+    conexion.create_all()
+
+
+#creamos un controlador de pruebas
+@app.route('/')
+def inicial():
+    return{
+        'message': 'Bienvenido a mi API de usuarios'
+    }
 if __name__ == '__main__':
     app.run(debug=True)
     
